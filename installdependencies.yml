@@ -5,12 +5,12 @@
     - name: install git
       apt:
         name: git 
-        status: present
+        state: present
     - name: install tree
       apt:
         name: tree
-        status: present
+        state: present
     - name: install wget
       apt:
         name: wget 
-        status: present    
+        state: present    
