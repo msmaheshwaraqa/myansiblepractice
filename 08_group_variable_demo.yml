@@ -1,0 +1,20 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: install git
+      apt:
+        name: "{{mygit}}"
+        state: present
+    - name: install tree
+      apt:
+        name: "{{mytree}}"
+        state: present
+    - name: install wget
+      apt:
+        name: wget 
+        state: present    
+    - name: install web
+      apt:
+        name: "{{myubuntuweb}}"
+        state: present
