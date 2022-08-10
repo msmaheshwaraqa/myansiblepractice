@@ -6,22 +6,22 @@
       apt:
         name: git 
         state: present
-      when: "ansible_os_family" == "Debian"
+      when: ansible_os_family == "Debian"
     - name: install tree
       apt:
         name: tree
         state: present
-      when: "ansible_os_family" == "Linux"
+      when: ansible_os_family == "Linux"
 
     - name: install wget
       apt:
         name: wget 
         state: present    
-      when: "ansible_os_family" == "Linux"
+      when: ansible_os_family == "Linux"
 
     - name: install apache2
       apt:
         name: apache2
         state: present
-      when: "ansible_os_family" == "Linux"
+      when: ansible_os_family == "Linux"
   
