@@ -1,0 +1,11 @@
+---
+- hosts: mywebserver
+  become: yes
+  vars:
+    myvar1: git
+  tasks:
+    - name: unistall git
+      apt:  
+        name: "{{myvar1}}"
+        state: absent
+   
