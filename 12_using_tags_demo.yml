@@ -6,11 +6,14 @@
       apt:  
         name: git
         state: present
+      tags: onlygit  
     - name: install tree
       apt:
         name: tree
         state: present
+      tags: onlytree  
     - name: install apache2
       apt:
         name: apache2
-        state: present    
+        state: present
+      tags: onlyapache    
