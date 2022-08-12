@@ -1,0 +1,8 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: create file
+      path: /home/ramesh/test.txt
+      state: touch
+      
