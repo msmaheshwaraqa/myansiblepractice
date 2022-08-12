@@ -1,0 +1,12 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: install apache2
+      apt:
+        name: apache2
+        state: present
+    - name: copy static file
+      template:
+        src: index2.html
+        dest: /var/www/html/index.html
