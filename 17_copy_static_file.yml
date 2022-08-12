@@ -8,5 +8,5 @@
         state: present
     - name: copy static file
       template:
-        src: index2.html
+        src: index2.j2
         dest: /var/www/html/index.html
