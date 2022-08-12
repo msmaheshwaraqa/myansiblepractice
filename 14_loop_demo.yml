@@ -1,0 +1,12 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: install prereq softwares 
+      apt:  
+        name: "{{item}}"
+        state: present
+      loop:
+        - git
+        - tree
+        - apache2
