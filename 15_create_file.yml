@@ -3,6 +3,6 @@
   become: yes
   tasks:
     - name: create file
-      path: /home/ramesh/test.txt
-      state: touch
-      
+      file:
+        path: /home/ramesh/test.txt
+        state: touch
