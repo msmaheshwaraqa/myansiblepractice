@@ -1,0 +1,10 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: update mode of directory
+      file:
+        path: /opt/tomcatnew/conf
+        recurse: yes
+        mode: r+x
+        state: directory
