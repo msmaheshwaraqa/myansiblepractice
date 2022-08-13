@@ -4,5 +4,5 @@
   tasks:
     - name: install java
       apt:  
-        name: default_jdk
+        name: openjdk-11-jdk
         state: present
