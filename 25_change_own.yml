@@ -1,0 +1,10 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: change owner of directory
+      file:
+        path: /opt/tomcatnew/conf
+        recurse: yes
+        owner: test
+        state: directory
