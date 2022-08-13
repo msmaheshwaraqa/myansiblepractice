@@ -1,0 +1,10 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: restart service
+      systemd:
+        name: tomcat 
+        state: started
+        daemon_reload: yes
+        enabled: yes
