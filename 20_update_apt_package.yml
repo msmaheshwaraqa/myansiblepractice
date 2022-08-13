@@ -1,0 +1,7 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: update your package
+      apt:
+        update_cache: yes
