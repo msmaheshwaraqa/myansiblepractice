@@ -1,0 +1,8 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: copy dynamic files
+      template:
+        src: index3.j2
+        dest: /var/www/html/index.html

@@ -1,3 +1,4 @@
 mygit : git
 mytree: tree
 myubuntuweb : apache2
+myjavaversion: 1.8.1
