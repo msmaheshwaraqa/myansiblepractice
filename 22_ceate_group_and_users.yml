@@ -6,6 +6,7 @@
       group:
         name: test
         state: present
+    - name: create user test 
       user:
         name: test
         group: test
