@@ -1,0 +1,14 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: create group test  
+      group:
+        name: test
+        state: present
+      user:
+        name: test
+        group: test
+        shell: /bin/false
+        home: /opt/test
+        state: present
