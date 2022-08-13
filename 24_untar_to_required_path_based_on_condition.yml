@@ -1,0 +1,17 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: download jenkins
+      get_url:
+        url: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
+        dest: /home/ramesh/apache-tomcat-8.5.5.tar.gz
+        force_basic_auth: yes
+    - name: create directory
+      file:
+        path: /opt/tomcatnew
+        state: directory
+    - name: extract downloaded file
+      command:
+        cmd: sudo tar xzvf /home/ramesh/apache-tomcat-8.5.5.tar.gz -C /opt/tomcatnew --strip-components=1
+        creates:  /opt/tomcatnew/LICENSE
