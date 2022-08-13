@@ -1,0 +1,9 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: download file from internet
+      get_url: 
+          url: https://get.jenkins.io/war-stable/2.319.1/jenkins.war
+          dest: /home/ramesh/jenkins.war
+          force_basic_auth: yes
