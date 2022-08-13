@@ -1,0 +1,9 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: create directory
+      file:
+        path: /opt/tomcat
+        state: directory
+        
