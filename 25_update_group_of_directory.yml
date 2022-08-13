@@ -1,0 +1,11 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: update group of directory
+      file:
+        path: /opt/tomcatnew
+        recurse: yes
+        group: test
+        state: directory
+        
