@@ -1,0 +1,8 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: install java
+      apt:  
+        name: default_jdk
+        state: present
