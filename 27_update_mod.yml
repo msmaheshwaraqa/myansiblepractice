@@ -6,5 +6,5 @@
       file:
         path: /opt/tomcatnew/conf
         recurse: yes
-        mode: r+x
+        mode: g+x+r
         state: directory
