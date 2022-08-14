@@ -1,2 +1,3 @@
 ---
-# tasks file for testrole
+- name: ping all nodes
+  ping:
