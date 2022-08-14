@@ -6,7 +6,7 @@
 
 - name: copy file mytomuser2 to /opt/tomcat/conf/tomcat-users.xml
   template: 
-      src: templates/mytomuser2.j2
+      src: templates/mytomuser.j2
       dest: /opt/tomcat/conf/tomcat-users.xml
 
 - name: copy file mycontext to /opt/tomcat/webapps/manager/META-INF/context.xml
