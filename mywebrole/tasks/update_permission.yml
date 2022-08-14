@@ -17,27 +17,27 @@
 - name: update owner for webapps
   file:
     path: /opt/tomcat/webapps
-    ownwer: tomcat
+    owner: tomcat
     recurse: yes
     state: directory  
 
 - name: update owner for work
   file:
     path: /opt/tomcat/work
-    ownwer: tomcat
+    owner: tomcat
     recurse: yes
     state: directory 
 
 - name: update owner for temp
   file:
     path: /opt/tomcat/temp
-    ownwer: tomcat
+    owner: tomcat
     recurse: yes
     state: directory 
 
 - name: update owner for logs
   file:
     path: /opt/tomcat/logs
-    ownwer: tomcat
+    owner: tomcat
     recurse: yes
     state: directory      
