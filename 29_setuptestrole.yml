@@ -1,5 +1,5 @@
 ---
-- host: mywebserver
+- hosts:: mywebserver
   become: yes
   roles:
     {role: testrole} 
