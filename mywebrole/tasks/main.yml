@@ -1,2 +1,12 @@
 ---
 # tasks file for mywebrole
+- include_tasks: update_apt.yml
+- include_tasks: install_java.yml
+- include_tasks: add_group.yml
+- include_tasks: add_user.yml
+- include_tasks: download_tomcat.yml
+- include_tasks: update_permission.yml
+- include_tasks: copy_tomcat_service.yml
+- include_tasks: start_tomcat.yml
+- include_tasks: download_and_extract_jenkins.yml
+- include_tasks: restarttomcat.yml
